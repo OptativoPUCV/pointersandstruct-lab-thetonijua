@@ -69,7 +69,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
   strcpy(nuevo->rut,rut);
   nuevo->edad=edad;
   
-  
+  return nuevo;
   return NULL;
 }
 
