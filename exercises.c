@@ -62,8 +62,8 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-
-   return NULL;
+  printf("%s",nombre);
+  return NULL;
 }
 
 /*
@@ -83,7 +83,6 @@ Vector * crearVector(int n) {
   Vector *vtr=NULL;
   vtr=(Vector*)malloc(sizeof(Vector)*n);
   
-
   int i,j;
 
   for(i = 0;i < n;i++){
