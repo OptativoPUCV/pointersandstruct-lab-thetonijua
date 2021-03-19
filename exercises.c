@@ -62,10 +62,10 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-  Persona nuevapersona;
-  strcpy(nuevapersona.nombre,nombre);
-  strcpy(nuevapersona.rut,rut);
-  nuevapersona.edad=edad;
+  Persona p;
+  strcpy(p.nombre,nombre);
+  strcpy(p.rut,rut);
+  p.edad=edad;
   return NULL;
 }
 
