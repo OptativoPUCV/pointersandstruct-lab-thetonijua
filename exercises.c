@@ -82,12 +82,13 @@ typedef struct {
 Vector * crearVector(int n) {
   Vector *vtr=NULL;
   vtr=(Vector*)malloc(sizeof(Vector)*n);
-
+  
 
   int i,j;
 
   for(i = 0;i < n;i++){
     vtr[i].datos=(int*)malloc(sizeof(int)*n);
+    vtr[i].capacidad=0;
     for(j=0;j<n;j++){
       vtr[i].datos[j]=0;
     }
