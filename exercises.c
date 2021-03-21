@@ -90,16 +90,10 @@ Vector * crearVector(int n) {
   Vector *vtr;
   vtr=(Vector*)malloc(sizeof(Vector)*n);
   
-  int i,j;
   vtr->capacidad=n;
-  for(i = 0;i < n;i++){
-    vtr[i].datos=(int*)malloc(sizeof(int)*(vtr->capacidad));
-    vtr[i].capacidad=0;
-    for(j=0;j<n;j++){
-      vtr[i].datos[j]=0;
-    }
-  }
-
+  vtr->datos=(int*)malloc(sizeof(int)*(vtr->capacidad));
+ 
+  return vtr;
   
   return NULL;
 }
