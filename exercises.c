@@ -129,7 +129,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
   int j=sizeof(a->datos);
   int n=(j/k);
   int i;
-  printf("%d",n);
+  printf("%d",j);
   for(i=0;i<=n;i++){
     c->datos[i]=a->datos[i]+b->datos[i];
   }
