@@ -126,10 +126,10 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
   int k=sizeof(a[0]);
-  int j=sizeof(*a);
+  int j=sizeof(a->datos);
   int n=(j/k);
   int i;
-  printf("%d",k);
+  printf("%d",j);
   for(i=0;i<n;i++){
     c->datos[i]=a->datos[i]+b->datos[i];
   }
